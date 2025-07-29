@@ -4,10 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors</title>
-        <script src="log.js"></script>
+        <script src="log.js" defer></script>
     </head>
 
     <body>
+        <div class="humanScore"></div>
+        <div class="computerScore"></div>
+
+        <button onclick="playRound('Rock', getComputerChoice())">Rock</button>
+        <button onclick="playRound('Paper', getComputerChoice())">Paper</button>
+        <button onclick="playRound('Scissors', getComputerChoice())">Scissors</button>
+
+        <div id="result"></div>
         
     </body>
 </html>
